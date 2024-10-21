@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co.com/0f57nh0/1.jpg",
+      "title": "Mastering JavaScript: A Comprehensive Guide",
+      "author": "Jane Doe",
+      "authorRealImage": "https://i.ibb.co.com/FqsRK44/boy1.png",
+      "postedDateTime": "2024-10-21T10:15:30Z",
+      "hashtag": ["#space", "#science", "#exploration"],
+      "readingTime": 7
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co.com/9hWGv5F/2.png",
+      "title": "The Future of Artificial Intelligence",
+      "author": "John Smith",
+      "authorRealImage": "https://i.ibb.co.com/j4CxCL6/boy2.jpg",
+      "postedDateTime": "2024-10-20T14:45:10Z",
+      "hashtag": ["#AI", "#technology", "#innovation"],
+      "readingTime": 5
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co.com/fGvN7g8/3.png",
+      "title": "Getting Started with React: The Beginner's Handbook",
+      "author": "Emily White",
+      "authorRealImage": "https://i.ibb.co.com/BtHyk33/girl1.jpg",
+      "postedDateTime": "2024-10-19T08:30:00Z",
+      "hashtag": ["#nature", "#adventure", "#travel"],
+      "readingTime": 8
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co.com/4tTkCKL/4.jpg",
+      "title": "Top Free Resources to Learn Web Development",
+      "author": "Michael Johnson",
+      "authorRealImage": "https://i.ibb.co.com/8g2R1RD/girl2.jpg",
+      "postedDateTime": "2024-10-18T12:00:00Z",
+      "hashtag": ["#webdev", "#JavaScript", "#coding"],
+      "readingTime": 10
+    }
+  ]
+  
