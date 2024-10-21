@@ -1,6 +1,7 @@
  
 import './App.css'
-import Blog from './Components/Blogs/Blogs'
+import Blogs from './Components/Blogs/Blogs'
+import Bookmarks from './Components/Bookmarks/Bookmarks'
 import Header from './Components/Header/Header'
 
 function App() {
@@ -9,7 +10,11 @@ function App() {
   return (
     <div>
       <Header></Header>
-      <Blog></Blog>
+
+      <div className='container mx-auto p-8 md:flex'>
+        <Blogs></Blogs>
+        <Bookmarks></Bookmarks>
+      </div>
     </div>
   )
 }
