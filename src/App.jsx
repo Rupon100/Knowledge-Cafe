@@ -16,8 +16,11 @@ function App() {
      
   }
 
-  const addCountTime = (time) => {
-     setAddTime(addTime + time)
+  const addCountTime = (time, id) => {
+     setAddTime(addTime + time);
+
+     const remainingBooksmarks = bookMark.filter(mark => mark.id !== id);
+     setBookMark(remainingBooksmarks);
   }
 
   return (

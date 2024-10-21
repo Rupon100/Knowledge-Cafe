@@ -4,7 +4,7 @@ import { FaBookmark } from "react-icons/fa";
 const Blog = ({ blog, addToBookMark, addTime }) => {
     const {id, cover, title, author, authorRealImage, postedDateTime, hashtag, readingTime} = blog;
     return (
-        <div className="space-y-5">
+        <div className="space-y-5 border p-2">
             <img src={cover} alt={`cover page of ${title}`} />
             <div className="flex justify-between items-center">
                 <div className="flex items-center gap-4">
@@ -24,7 +24,7 @@ const Blog = ({ blog, addToBookMark, addTime }) => {
             <h1 className="text-2xl font-semibold py-2">{title}</h1>
             <span className="text-gray-600">{hashtag}</span>
             <br />
-            <button className="text-blue-700 underline" onClick={() => addTime(readingTime)}>mark as read</button>
+            <button className="text-blue-700 underline" onClick={() => addTime(readingTime, id)}>mark as read</button>
         </div>
     );
 };

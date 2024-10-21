@@ -13,14 +13,16 @@ const Blogs = ({addToBookMark, addTime}) => {
     }, [])
 
     return (
-        <div className="md:w-2/3 flex flex-col gap-10">
+        <div className="md:w-2/3 flex flex-col gap-10 mb-10">
         {
             blogs.map(blog => <Blog 
                 key={blog.id} 
                 blog={blog}
                 addToBookMark={addToBookMark}
                 addTime={addTime}
-                ></Blog>)
+                >
+
+                </Blog>)
         }
         </div>
     );
