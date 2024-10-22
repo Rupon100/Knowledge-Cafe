@@ -28,14 +28,10 @@ function App() {
         setAddTimeArray(newAddTimeArray);
         const ttlTime = newAddTimeArray.reduce((acc, currentTime) => acc +  currentTime.readingTime, 0)
         setAddTime(ttlTime)
-       
       }else {
         alert('Already added!');
       }  
   }
-
-
-
 
   return (
     <div>

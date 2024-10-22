@@ -1,7 +1,5 @@
 import Bookmark from "../Bookmark/Bookmark";
 
- 
-// import Bookmarks from './Bookmarks';
 const Bookmarks = ({ bookMark, setTime }) => {
     return (
         <div className="md:w-1/3 space-y-4">
@@ -15,4 +13,5 @@ const Bookmarks = ({ bookMark, setTime }) => {
     );
 };
 
+ 
 export default Bookmarks;

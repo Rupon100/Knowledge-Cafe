@@ -1,8 +1,15 @@
-# React + Vite
+# Knowlwdge Cafe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is built using ReactJS.
 
-Currently, two official plugins are available:
+Key features include the use of useState for updating data and useEffect for dynamically rendering changes in the DOM. Additionally, I implemented props to pass data between components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Challenges faced:
+
+   * I implemented a bookmark feature where items can be bookmarked without duplication. When a bookmark button is clicked, it appears in the bookmarks component, and duplicates are prevented.
+
+    * However, I encountered an issue with the "Mark as Read" button. I needed to calculate the total time spent reading, which required using another useState to store the "Mark as Read" entries. I then used the reduce() method to sum the total time. This problem arose as I am still in the early stages of learning React.
+
+
+
+### live view: https://knowledge-cafe101.netlify.app/
