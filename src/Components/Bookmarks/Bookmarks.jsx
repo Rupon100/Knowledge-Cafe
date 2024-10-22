@@ -3,7 +3,6 @@ import Bookmark from "../Bookmark/Bookmark";
  
 // import Bookmarks from './Bookmarks';
 const Bookmarks = ({ bookMark, setTime }) => {
-    console.log(bookMark)
     return (
         <div className="md:w-1/3 space-y-4">
             <div className="border border-blue-600 bg-blue-100 p-3 rounded-lg">

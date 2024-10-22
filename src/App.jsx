@@ -6,22 +6,36 @@ import Bookmarks from './Components/Bookmarks/Bookmarks'
 import Header from './Components/Header/Header'
 
 function App() {
- 
   const [bookMark, setBookMark] = useState([]);
+  const [addTimearray, setAddTimeArray] = useState([]);
   const [addTime, setAddTime] = useState(0);
+ 
 
   const addToBookMark = (blog) => {
-    const newBookMarks = [...bookMark, blog];
-    setBookMark(newBookMarks);
-     
+    const exist = bookMark.find(mark => mark.id === blog.id)
+    if(!exist){
+      const newBookMarks = [...bookMark, blog];
+      setBookMark(newBookMarks);  
+    }else{
+      alert("Already added!");
+    } 
   }
 
-  const addCountTime = (time, id) => {
-     setAddTime(addTime + time);
-
-     const remainingBooksmarks = bookMark.filter(mark => mark.id !== id);
-     setBookMark(remainingBooksmarks);
+  const addCountTime = (blog) => {
+      const alreadyAdded = addTimearray.find(mark => mark.id === blog.id);
+      if(!alreadyAdded){
+        const newAddTimeArray = [...addTimearray, blog];
+        setAddTimeArray(newAddTimeArray);
+        const ttlTime = newAddTimeArray.reduce((acc, currentTime) => acc +  currentTime.readingTime, 0)
+        setAddTime(ttlTime)
+       
+      }else {
+        alert('Already added!');
+      }  
   }
+
+
+
 
   return (
     <div>

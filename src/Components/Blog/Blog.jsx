@@ -24,7 +24,7 @@ const Blog = ({ blog, addToBookMark, addTime }) => {
             <h1 className="text-2xl font-semibold py-2">{title}</h1>
             <span className="text-gray-600">{hashtag}</span>
             <br />
-            <button className="text-blue-700 underline" onClick={() => addTime(readingTime, id)}>mark as read</button>
+            <button className="text-blue-700 underline" onClick={() => addTime(blog)}>mark as read</button>
         </div>
     );
 };
